@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- css Link  -->
+<link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="card">
+    <div class="wrapper">
+        <p> Advice # <span data-advice-id></span></p>
+        <span class="loader" data-loader></span>
+        <h2><span data-advice-text></span></h2>
+      <picture>
+        <source media="(width >= 576px)" srcset="./images/pattern-divider-desktop.svg">
+        <img src="./images/pattern-divider-mobile.svg" alt="" srcset="">
+      </picture>
+      <button data-fetch>
+        <img src="./images/icon-dice.svg" alt="disc">
+      </button>
+    </div>
+  </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/winter2000TH">themoonwillstaywithme</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

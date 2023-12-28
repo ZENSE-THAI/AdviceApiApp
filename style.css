@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--Dark-Blue);
+}
+
+img,svg{
+    display: block;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 1rem;
+    max-width: 500px;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 1rem;
+}
+
+.wrapper {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wrapper p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    color: var(--Neon-Green);
+}
+
+.wrapper h2 {
+    color: var(--Light-Cyan);
+    font-size: 1.2rem;
+}
+
+picture img {
+    margin-bottom: 2rem;
+}
+
+button {
+    position: absolute;
+    bottom: -30px;
+    background-color: var(--Neon-Green);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+button:hover{
+    filter: drop-shadow(0 0 .75rem var(--Neon-Green));
+}
+
+@media (width > 576px ) {
+    .wrapper h2 {
+        font-size: 1.7rem;
+    }
+}
+
+.attribution { 
+    font-size: .8rem; 
+    text-align: center;
+    color: var(--Light-Cyan); 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution a { 
+    color: var(--Neon-Green) }
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--Neon-Green);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
